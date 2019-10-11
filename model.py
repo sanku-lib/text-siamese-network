@@ -56,8 +56,8 @@ class SiameseNetwork:
         h_pool_flat = tf.reshape(h_pool, [-1, num_filters_total], name="pool_flat")
 
         # Add dropout [comment dropout during prediction]
-        with tf.name_scope("dropout"):
-            h_drop = tf.nn.dropout(h_pool_flat, self.dropout_keep_prob, name="dropout")
+        # with tf.name_scope("dropout"):
+        #     h_drop = tf.nn.dropout(h_pool_flat, self.dropout_keep_prob, name="dropout")
 
         # Final output Layer
         with tf.variable_scope("output", reuse=reuse):
@@ -66,7 +66,7 @@ class SiameseNetwork:
                 shape=[num_filters_total, self.output_embedding_size],
                 initializer=tf.contrib.layers.xavier_initializer())
             b2 = tf.Variable(tf.constant(0.1, shape=[self.output_embedding_size]), name="b2")
-            out_net = tf.nn.xw_plus_b(h_drop, W, b2, name="output_embedding")
+            out_net = tf.nn.xw_plus_b(h_pool_flat, W, b2, name="output_embedding")
 
         return out_net
 

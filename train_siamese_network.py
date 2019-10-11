@@ -11,11 +11,11 @@ tf.flags.DEFINE_float("dropout_keep_prob", 0.5, "Dropout keep probability (defau
 tf.flags.DEFINE_float("l2_reg_lambda", 0.0, "L2 regularization lambda (default: 0.0)")
 tf.flags.DEFINE_integer("output_embedding_size", 64, "size of last hidden layer")
 tf.flags.DEFINE_integer('batch_size', 1500, 'Batch size.')
-tf.flags.DEFINE_integer('train_iter', 250, 'Total training iter')
+tf.flags.DEFINE_integer('train_iter', 200, 'Total training iter')
 tf.flags.DEFINE_integer('step', 50, 'Save after ... iteration')
 tf.flags.DEFINE_float('learning_rate','0.0001','Learning rate')
 tf.flags.DEFINE_float('momentum','0.99', 'Momentum')
-tf.flags.DEFINE_string('model', 'siamese_net', 'model to run')
+tf.flags.DEFINE_string('model', 'siamese_net', 'siamese model to run')
 tf.flags.DEFINE_string('data_src', './data_repository/questions.csv', 'source of training dataset')
 
 flags = tf.app.flags

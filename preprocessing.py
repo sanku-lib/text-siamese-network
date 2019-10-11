@@ -15,7 +15,7 @@ class PreProcessing:
         self.similar_pairs = self.build_corpus('./data_repository/questions.csv')
         self.embeddings_model = fasttext.train_unsupervised("./data_repository/text_corpus.txt", model='skipgram', lr=0.005, dim=64,
                                             ws=5, epoch=200)
-        self.embeddings_model.save_model("./model_siamese_network/ft_skipgram_ws5_dim28.bin")
+        self.embeddings_model.save_model("./model_siamese_network/ft_skipgram_ws5_dim64.bin")
         print('FastText training finished successfully.')
         self.current_index = 0
         input_X = list(self.similar_pairs['question1'])
@@ -25,7 +25,7 @@ class PreProcessing:
         wc_list = []
         wc_list.extend(wc_list_x)
         wc_list.extend(wc_list_y)
-        max_document_length = max(wc_list)                  # or use a constant like 16, select this parameter based on your understanding of what could be a good choice
+        max_document_length = 16                 # or use a constant like 16, select this parameter based on your understanding of what could be a good choice
         number_of_elements = len(input_X)
         self.vocab_processor = learn.preprocessing.VocabularyProcessor(max_document_length)
         full_corpus = []
