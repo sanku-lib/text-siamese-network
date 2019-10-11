@@ -24,6 +24,22 @@ python train_siamese_network.py
 ## Prediction
 Open Prediction.ipynb using Jupyter Notebook to look into Prediction module.
 
+## Results
+Given Question: **"Is it healthy to eat egg whites every day?"** most similar questions are as follows:
+1. is it bad for health to eat eggs every day
+2. is it healthy to eat once a day
+3. is it unhealthy to eat bananas every day
+4. is it healthy to eat bread every day
+5. is it healthy to eat fish every day
+6. what high protein foods are good for breakfast
+7. how do you drink more water every day
+8. what will happen if i drink a gallon of milk every day
+9. is it healthy to eat one chicken every day
+10. is it healthy to eat a whole avocado every day
+
+Due to limitation in file size, I haven't uploaded trained model in git. You can download pre-trained model from [here](https://drive.google.com/drive/folders/1FEdvcQt-tbNCZeUKhawFxyAn6Dn7H08I?usp=sharing)
+
+
 
 
 
