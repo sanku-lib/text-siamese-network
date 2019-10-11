@@ -37,7 +37,7 @@ Given Question: **"Is it healthy to eat egg whites every day?"** most similar qu
 9. is it healthy to eat one chicken every day
 10. is it healthy to eat a whole avocado every day
 
-Due to limitation in file size, I haven't uploaded trained model in git. You can download pre-trained model from [here](https://drive.google.com/drive/folders/1FEdvcQt-tbNCZeUKhawFxyAn6Dn7H08I?usp=sharing)
+Due to limitation in max file size in git, I haven't uploaded trained model in git. You can download pre-trained model from [here](https://drive.google.com/drive/folders/1FEdvcQt-tbNCZeUKhawFxyAn6Dn7H08I?usp=sharing) and unzip and paste pre-trained model to "./model_siamese_network" directory.
 
 
 
