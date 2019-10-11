@@ -21,6 +21,8 @@ pip install -r requirements.txt
 ```bash
 python train_siamese_network.py
 ```
+## Prediction
+Open Prediction.ipynb using Jupyter Notebook to look into Prediction module.
 
 
 
