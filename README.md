@@ -39,6 +39,9 @@ Given Question: **"Is it healthy to eat egg whites every day?"** most similar qu
 
 Due to limitation in max file size in git, I haven't uploaded trained model in git. You can download pre-trained model from [here](https://drive.google.com/drive/folders/1FEdvcQt-tbNCZeUKhawFxyAn6Dn7H08I?usp=sharing) and unzip and paste pre-trained model to "./model_siamese_network" directory.
 
+## Note
+To train on a different dataset, you have to build a dataset consisting of similar and dissimilar text pairs. Empirically, you need to have at least ~200k number of pairs to achieve excellent performance. Try to maintain a balance between similar and dissimilar pairs [50% - 50%] is a good choice. 
+
 
 
 
